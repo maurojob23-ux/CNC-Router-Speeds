@@ -24,8 +24,16 @@ export const Header: React.FC<HeaderProps> = ({
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
         {/* Brand Logo & Title */}
         <div className="flex items-center space-x-3">
-          <div className="w-10 h-10 rounded-lg bg-gradient-to-tr from-cyan-600 to-blue-500 flex items-center justify-center text-white shadow-lg shadow-cyan-500/20">
-            <Wrench className="w-5 h-5" />
+          <div className="w-10 h-10 rounded-lg bg-slate-800 border border-slate-700 flex items-center justify-center p-1.5 shadow-md shadow-cyan-900/20 overflow-hidden">
+            <img 
+              src="./favicon.svg" 
+              alt="CNC Machining Icon" 
+              className="w-full h-full object-contain"
+              onError={(e) => {
+                // Fallback if image fails
+                (e.target as HTMLElement).style.display = 'none';
+              }}
+            />
           </div>
           <div>
             <h1 className="text-lg font-bold tracking-tight text-slate-100 flex items-center gap-2">
