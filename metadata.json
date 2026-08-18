@@ -1,0 +1,6 @@
+{
+  "name": "CNC Chip Load Calculator",
+  "description": "Calculate CNC milling chip load, speeds, and feeds based on material, tool diameter, flutes, and Onsrud cutting data recommendations.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
